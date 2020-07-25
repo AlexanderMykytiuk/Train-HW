@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-color: tomato;
+    background-color: rgb(218, 71, 255);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font: inherit;
     cursor: pointer;
@@ -81,5 +81,89 @@ transform: scale(1);
 
 .btn:hover,
 .btn:focus {
-    background-color:blue;
+    background-color:rgb(255, 174, 0);
+}
+
+
+.menu {
+    
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
+    list-style: none;
+    width: 650px;
+}
+
+
+.menu__item:hover .submenu__item {
+    display: block;
+
+}
+
+.menu__item {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    
+    border-radius: 6px;
+    outline: 2px solid blueviolet;
+}
+
+
+.menu__link {
+    display: block;
+    padding: 30px 60px;
+    background-color: orangered;
+   color: cornsilk;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+}
+
+.submenu {
+    
+    left: 0;
+    top: 100%;
+    padding: 0;
+    margin: 0;
+    background-color:grey;
+    list-style: none;
+    position: absolute;
+    
+    width: 100%;
+}
+   
+.submenu__item {
+    display: none;
+}
+
+.submenu__link {
+    text-decoration: none;
+    margin-left: 20px;
+    width: 120px;
+}
+
+
+
+.scena {
+    width: 300px;
+    height: 300px;
+    outline: 2px solid blueviolet;
+    
+    perspective: 500px; 
+}
+
+.box {
+    height: 100%;
+    background-color: green;
+    background-image: url(./logo6.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(0deg);
+    transition: transform 500ms linear;
+}
+
+.scena:hover .box{
+    transform: rotateY(180deg);
 }
