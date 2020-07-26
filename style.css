@@ -2,6 +2,12 @@ body {
     margin: 50px;
 }
 
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .btn {
     position: relative;
     display: inline-flex;
@@ -149,7 +155,7 @@ transform: scale(1);
     width: 300px;
     height: 300px;
     outline: 2px solid blueviolet;
-    
+    margin-bottom: 50px;
     perspective: 500px; 
 }
 
@@ -166,4 +172,28 @@ transform: scale(1);
 
 .scena:hover .box{
     transform: rotateY(180deg);
+}
+
+
+
+
+.button {
+    display: inline-block;
+    padding: 11px 34px;
+    min-width: 200px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    text-decoration: none;
+
+    color: brown;
+    background-color: yellow;
+
+    text-align: center;
+
+}
+
+.button.primery {
+    color: blue;
+    background-color: darkkhaki;
+    border-color: darkturquoise;
 }
